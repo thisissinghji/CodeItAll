@@ -1,0 +1,96 @@
+.gpt3__cta{
+    border-radius: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin: 4rem;
+    background: -moz-linear-gradient(90deg, rgba(12, 3, 182, 1) 0%, rgba(0, 60, 212, 1) 50%, rgba(195, 79, 195, 1) 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-linear-gradient(90deg, rgba(12, 3, 182, 1) 0%, rgba(0, 60, 212, 1) 50%, rgba(195, 79, 195, 1) 100%);
+
+    /* opera 11.10+ */
+    background: -o-linear-gradient(90deg, rgba(12, 3, 182, 1) 0%, rgba(0, 60, 212, 1) 50%, rgba(195, 79, 195, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C34FC3', endColorstr='#0C03B6', GradientType=0 );
+
+    /* ie 10+ */
+    background: -ms-linear-gradient(90deg, rgba(12, 3, 182, 1) 0%, rgba(0, 60, 212, 1) 50%, rgba(195, 79, 195, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background: linear-gradient(90deg, rgba(12, 3, 182, 1) 0%, rgba(0, 60, 212, 1) 50%, rgba(195, 79, 195, 1) 100%);
+}
+
+.gpt3__cta p{
+    font-family: var(--font-family);
+    color: var(--color-text);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 30px;
+
+}
+.gpt3__cta h3{
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 45px;
+}
+.gpt3__cta-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+.gpt3__cta-btn button{
+    background: #000000;
+    border-radius: 40px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+.gpt3__cta-btn button:hover{
+    border: 2px solid white;
+}
+@media screen and (max-width:1040px)
+{
+    .gpt3__cta-btn button{
+        font-size: 15px;
+        line-height: 23px;
+    }
+}
+
+@media screen and (max-width:650px){
+    .gpt3__cta{
+        flex-direction: column;
+        margin: 2rem;
+        padding: 1rem;
+    }
+    .gpt3__cta p{
+        font-size: 8px;
+        line-height: 20px;
+    }
+    .gpt3__cta h3{
+        font-size: 18px;
+        line-height: 35px;
+    }
+    .gpt3__cta-btn button{
+        font-size: 12px;
+        line-height: 25px;
+    }
+    .gpt3__cta-btn{
+        margin: 2rem 0 0;
+    }
+}

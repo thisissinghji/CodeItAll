@@ -1,0 +1,133 @@
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    display: table;
+  }
+  
+  .code__table_data td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 12.649px;
+    color: #fff;
+  }
+  
+  .code__table_content th {
+    background-color: #f2f2f2;
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: center;
+  }
+  .code__table_link:hover{
+    color: #ff6600;
+  }
+  /* Style the links */
+ 
+  .code_practice h2{
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+  }
+  /* Add some padding to the header */
+  .code__table_heading {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: -0.04em;
+    text-align: center;
+  }
+  /* Center the table and header */
+  #practice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  /* Add a box-shadow to the table */
+  table {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add some spacing between rows */
+  tbody tr {
+    margin-bottom: 10px;
+  }
+  
+  
+  /* Custom checkbox style */
+  input[type='checkbox'] {
+    vertical-align: middle;
+    display: none; /* Hide the default checkbox */
+  }
+  .checkbox-label {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+  .checkbox-label:before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #007bff;
+    border-radius: 3px;
+  }
+  
+  /* Checked state */
+  input[type='checkbox']:checked + .checkbox-label:before {
+    background-color: #007bff;
+  }
+  
+  .checkbox-label:after {
+    content: '\f00c'; /* FontAwesome checkmark icon */
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    top: -6px;
+    left: 3px;
+    font-size: 9px;
+    color: #fff;
+    display: none;
+  }
+  input[type='checkbox']:checked + .checkbox-label:after {
+    display: block;
+  }
+  
+  @media screen and (max-width:990px){
+    .code_heading h2{
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 2rem;
+    }
+    .code__table_data td{
+      font-weight:100;
+      font-size: 10px;
+    }
+}
+  @media (max-width: 768px) {
+    table {
+      font-size: 14px;
+    }
+  
+    th,
+    td {
+      padding: 8px;
+    }
+  
+    .code__table_heading {
+      font-size: 10px;
+    }
+  }
+  
